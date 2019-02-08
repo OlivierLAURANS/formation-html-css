@@ -1,0 +1,79 @@
+#bgvid {
+	position:fixed; right: 0; bottom: 0;
+	min-width: 100%; min-height: 100%;
+	width: auto; height: auto; z-index:-100;
+	background:url (pc.jpg) no-repeat; 
+	background-size: cover;
+}
+@keyframes taille {
+    0%{width: 50px;}
+    50%{width: 500px;}
+	50%{border-radius: 0%;}
+	75%{transform:translate:100px 100px}
+	
+	75%{transform:rotate( 180deg);}
+	100%{width: 500px; border-radius: 100%;background-color: red;}
+
+ }
+ 		div {
+	height: 100px;
+    width: 100px;
+    background-color:blue;
+	border-radius:00%;
+	animation-name: taille;
+    animation-duration: 6s;
+	animation-delay:2s;
+	animation-iteration-count:1;
+	animation-fill-mode:backwards
+
+    }
+	
+@webkit-keyframes taille {
+    0%{width: 50px;}
+    50%{width: 500px;}
+	50%{border-radius: 0%;}
+	75%{transform:translate:100px 100px}
+	
+	75%{transform:rotate( 180deg);}
+	100%{width: 500px; border-radius: 100%;background-color: red;}	
+	
+div {
+	height: 100px;
+    width: 100px;
+    background-color:blue;
+	border-radius:00%;
+    -webkit-animation-name: taille;
+	-webkit-animation-duration: 6s;
+	-webkit-animation-delay:2s;
+	-webkit-animation-iteration-count:1;
+	-webkit-animation-fill-mode:backwards
+
+    }
+	
+@moz-keyframes taille {
+    0%{width: 50px;}
+    50%{width: 500px;}
+	50%{border-radius: 0%;}
+	75%{transform:translate:100px 100px}
+	
+	75%{transform:rotate( 180deg);}
+	100%{width: 500px; border-radius: 100%;background-color: red;}		
+	
+	div {
+	height: 100px;
+    width: 100px;
+    background-color:blue;
+	border-radius:00%;
+    -moz-animation-name: taille;
+    -moz-animation-duration: 6s;
+	-moz-animation-delay:2s;
+	-moz-animation-iteration-count:1;
+	-moz-animation-fill-mode:backwards
+
+    }
+
+#div1 {animation-timing-function: liniear	
+}
+	
+
+
